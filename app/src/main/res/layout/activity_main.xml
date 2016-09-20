@@ -1,0 +1,55 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <fragment
+        android:id="@+id/chat_fragment"
+        android:name="qianfeng.com.fragment_ceshi.BlankFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="10"/>
+
+    <fragment
+        android:id="@+id/find_fragment"
+        android:name="qianfeng.com.fragment_ceshi.BlankFragment2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="10" />
+
+    <fragment
+        android:id="@+id/mine_fragment"
+        android:name="qianfeng.com.fragment_ceshi.BlankFragment3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="10" />
+
+    <RadioGroup
+        android:id="@+id/bottomRg"
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"
+        android:layout_weight="0.5"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rbOne"
+            android:layout_width="52dp"
+            android:layout_height="50dp"
+            android:checked="true"
+            android:text="聊天" />
+
+        <RadioButton
+            android:id="@+id/rbTwo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="发现" />
+
+        <RadioButton
+            android:id="@+id/rbThree"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="我的" />
+    </RadioGroup>
+</LinearLayout>
